@@ -1,0 +1,1 @@
+三大流程都是在ViewRootImpl中完成的，从ViewRootImpl中的performTraversals开始，有三个方法performMeasure, performLayout, prformDraw分别对measure,layout,draw三个方法。
