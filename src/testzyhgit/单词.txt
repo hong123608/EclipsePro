@@ -1,3 +1,4 @@
 perform Traversals 进行 遍历  Decor View  装饰 视图   schedule Traversals  表遍历  Observable 被观察者  observer 观察者
 subscribe  订阅，订购 Scheduler 调度程序 Subscriber 用户  fork 叉子 ,派生  Wraper 包装 Material  原料,材料 Nested 嵌套
-senior 资深的  engine 引擎   burst  突然 emission 发行/出 amount  数量  Measure Spec  测量规范
+senior 资深的  engine 引擎   burst  突然 emission 发行/出 amount  数量  Measure Spec  测量规范  exactly  确切的/真实的
+unspecified 未规范/未指定
