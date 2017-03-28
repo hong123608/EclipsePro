@@ -1,0 +1,17 @@
+1xmpp实现即时通讯,后百度推送,融云实现聊天界面等,
+2多种自定义控件,解决冲突的viewpage,listview嵌套,circleprogressbar,六式布局等
+3webview与本地交互,缓存,等
+4加载数据 封装volley框架(怎么封装,在里面使用gosn解析...)分装UIL(介绍一下),
+5,使用库pulltorefresh库,百度地图,第三方登录,分享..
+6,使用nineoldanimation实现动画效果,..怎么实现的..
+7,使用友盟进行数据统计和bug反馈
+
+
+大影
+1重写google 的refreshswitlayout实现刷新和加载,
+2,封装asynchttp下载数据(区别),上传图片,封装uil
+3,gif图片(大体说下原理)
+4,使用比较多的新控件,....及介绍
+5,使用recycleview实现瀑布流效果
+6,bugglybug反馈
+7,三方分享

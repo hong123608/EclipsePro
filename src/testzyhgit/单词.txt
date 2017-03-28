@@ -2,4 +2,5 @@ perform traversals ½øĞĞ ±éÀú  decor View  ×°ÊÎ ÊÓÍ¼   schedule Traversals  ±í±éÀ
 subscribe  ¶©ÔÄ£¬¶©¹º Scheduler µ÷¶È³ÌĞò Subscriber ÓÃ»§  fork ²æ×Ó ,ÅÉÉú  Wraper °ü×° Material  Ô­ÁÏ,²ÄÁÏ Nested Ç¶Ì×
 senior ×ÊÉîµÄ  engine ÒıÇæ   burst  Í»È» emission ·¢ĞĞ/³ö amount  ÊıÁ¿  Measure Spec  ²âÁ¿¹æ·¶  exactly  È·ÇĞµÄ/ÕæÊµµÄ
 unspecified Î´¹æ·¶/Î´Ö¸¶¨  Serial Executor ´®ĞĞ Ö´ĞĞ Annotations ×¢ÊÍ  Instrumentation ÒÇÆ÷/ÊÖ¶Î sticky Õ³ĞÔ Incremental  ÔöÁ¿
-finalize Íê³É/¶¨ĞÍ  malloc ÄÚ´æ·ÖÅä concurrent Í¬Ê±·¢ÉúµÄ explicit  Ã÷È·µÄ£¬Çå³ş Alpha Í¸Ã÷¶È
+finalize Íê³É/¶¨ĞÍ  malloc ÄÚ´æ·ÖÅä concurrent Í¬Ê±·¢ÉúµÄ explicit  Ã÷È·µÄ£¬Çå³ş Alpha Í¸Ã÷¶È Future Î´À´µÄ  property  µÀ¾ß
+animation ¶¯»­ interpolator  ²å²¹Æ÷
