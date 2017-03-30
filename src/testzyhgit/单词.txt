@@ -3,4 +3,4 @@ subscribe  订阅，订购 Scheduler 调度程序 Subscriber 用户  fork 叉子 ,派生  Wrape
 senior 资深的  engine 引擎   burst  突然 emission 发行/出 amount  数量  Measure Spec  测量规范  exactly  确切的/真实的
 unspecified 未规范/未指定  Serial Executor 串行 执行 Annotations 注释  Instrumentation 仪器/手段 sticky 粘性 Incremental  增量
 finalize 完成/定型  malloc 内存分配 concurrent 同时发生的 explicit  明确的，清楚 Alpha 透明度 Future 未来的  property  道具
-animation 动画 interpolator  插补器
+animation 动画 interpolator  插补器 Architecture 层次,结构,建筑
