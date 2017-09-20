@@ -1,0 +1,143 @@
+1、数据库：database，存储数据
+
+sqlite：sql(structure query language，结构化查询语言) +lite
+
+常用数据库：mysql ， oracle，db2，sql server……
+
+2、
+以“.”开头是sqlite的命令，不用加“；”
+sql语句以“；”结束
+
+
+3、sqlite命令：
+。help：帮助
+。open filename ：打开或创建数据库文件,如：.open my.db
+。tables：查看当前数据库的数据表
+.schema 表名：查看表结构
+
+4，创建表
+create table 表名(
+	字段
+)
+
+
+字段：列
+记录：行
+
+插入语句：
+insert into 表名（字段） values (值);
+
+查询语句：
+--查询表中所有的字段值
+select *　from 表名；
+
+修改语句：
+update 表名 set 字段=值，字段=值…… +条件
+
+删除语句：
+delete  from 表名 +条件；
+
+ｃｒｕｄ：
+create
+retrieve
+update
+delete
+
+5、条件语句：where 条件
+1、字段=值，比如 ：id= 1，name='tom'
+
+2、查询年龄大于20的学生
+ where age>20
+
+3、查询年龄大于20 的男同学
+where age>20 and sex='male'
+
+4、查询年龄大于20 的南同学，或者小于19的女同学
+where (age>20 and sex='male') or  (age<19 and sex='female')
+
+5、模糊查询，查询姓名以t开头的
+like
+%:代表0个或多个
+_:代表1个
+
+where name  like 't%'
+
+6、查询第二个字母为o的学生
+where name like '_o%'
+
+7、查询名字中含有o的同学
+where name like '%o%'
+
+6、排序，order by 字段 升序（asc） 降序（desc）,默认升序
+order by age asc
+order by age desc
+
+a:先按年龄升序，再按姓名降序
+order by age ,name desc
+
+7、函数：
+max（字段）：最大值
+min（）；最小值
+sum（）
+avg（）；
+count();统计
+	count(*):记录数
+	count(字段)：统计该字段的记录数
+	count(distinct 字段):去掉重复项进行统计
+
+8、别名
+字段 as 别名 ，max（） as 别名
+
+9、分组：group by 字段 having 条件
+统计男女同学的人数，并按性别分组
+select sex,count(*) from student group by sex;
+
+学生表:name,age,classno
+统计每个班的人数，按班级分组
+select classno ,count(*) from student group by classno;
+
+统计每个班的人数，按班级分组,并且人数大于20的
+select classno ,count(*) from student group by classno having count(*)>20;
+
+统计每个班级年龄大于20的人数,并按人数降序排序
+select classno ,count(*) from student
+where age>20
+group by classno
+order by count(*) desc;
+
+统计每个班级年龄大于20的人数,总人数大于10,并按人数降序排序
+select classno ,count(*) from student
+where age>20
+group by classno
+having count(*)>10
+order by count(*) desc;
+
+10:limit:查询表中的部分记录
+查询表中年龄最大的三个人
+ select * from student order by age desc limit 0 ,3;
+
+11、in
+查询姓名为tom和jack的信息
+select * from student where name='tom' or name='jack'
+select * from student where name in('tom','jack')
+
+user:id,username,password
+admin 123456
+tom abc
+
+12、JDBC:java database connection
+
+13、HTTP编程：Hyper Text Transmission protocol，超文本传输协议
+HttpUrlConnection
+HttpClient
+
+14、步骤：
+a:已知url地址,根据url地址创建URL对象,指定访问的资源
+URL（uniform resource locator，统一资源定位符）
+b:创建程序与url地址之间的通信连接
+c:设置请求的方式，get或post
+d:打开连接
+e:如果返回的状态码为200，使用流进行读写操作
+
+15、接口回调
+接口类型的变量，实际赋值是实现类的对象，此时使用接口类型的变量调用接口中的方法，实际调用的是实现类重写的方法

@@ -1,0 +1,60 @@
+创建表  完整语句,,,自增长加数据类型
+
+create table student(name text,age integer,score real)
+//字段类型
+
+integer:整形
+
+real:浮点型
+
+text:文本字符串
+
+http://www.runoob.com/sqlite/sqlite-create-table.html
+
+[tkid]            integer PRIMARY KEY autoincrement,                -- 设置主键
+    [tktype]          int default 0,
+    [tableid]         varchar (50),
+
+当ID是自增时，删除ID最大那行记录后，重新插入新行，新的ID不会重复的！ID始终是唯一的
+
+
+///////  主键  ----定义作用
+
+主关键字(primary key)是表中的一个或多个字段，它的值用于惟一地标识表中的某一条记录。在两个表的关系中，主关键字用来在一个表中引用来自于另一个表中的特定记录。主关键字是一种唯一关键字，表定义的一部分。一个表不能有多个主关键字，并且主关键字的列不能包含空值。主关键字是可选的，并且可在 CREATE TABLE 或 ALTER TABLE 语句中定义。
+
+************* 
+char,varchar,text,nchar,nvarchar,ntext的区别
+ http://blog.csdn.net/xingfeng0501/article/details/7817121
+、CHAR。CHAR存储定长数据很方便，CHAR字段上的索引效率级高，比如定义char(10)，那么不论你存储的数据是否达到了10个字节，都要占去10个字节的空间,不足的自动用空格填充。
+2、VARCHAR。存储变长数据，但存储效率没有CHAR高。如果一个字段可能的值是不固定长度的，我们只知道它不可能超过10个字符，把它定义为 VARCHAR(10)是最合算的。VARCHAR类型的实际长度是它的值的实际长度+1。为什么“+1”呢？这一个字节用于保存实际使用了多大的长度。从空间上考虑，用varchar合适；从效率上考虑，用char合适，关键是根据实际情况找到权衡点。
+3、TEXT。text存储可变长度的非Unic
+//////
+数据类型为无数据类型(typelessness)。这意味着可以保存任何类型的数据到所想要保存的任何表的任何列中，无论这列声明的数据类型是什么。虽然在生成表结构的时候，要声明每个域的数据类型，但SQLite并不做任何检查。开发人员要靠自己的程序来控制输入与读出数据的类型。这里有一个例外，就是当主键为整型值时，如果要插入一个非整型值时会产生异
+
+Create Table语句中指定数据类型，因为数据类型有利于增强程序的可读***************
+
+删除表 ***
+
+drop table student
+
+插入数据,,字段个数和数据类型要严格对应,主键之外不会因数据类型报错,但是  读取时再做处理容易出错
+
+insert into student(name,age) values(‘夏明’,10);字符串的内容应该用单引号括住
+
+
+
+更新 字段 
+
+update table set name=‘木木’,age=8;  
+上面的实例会将student表中的所有记录的name和age都会修改,因为每家  条件语句
+ 可以值更新部分 字段,并且加上条件语句
+
+删除数据
+delete from student  中的所有数据都会删除
+
+加 where 语句
+
+
+
+
+
