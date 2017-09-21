@@ -39,7 +39,7 @@ delete  from 表名 +条件；
 
 ｃｒｕｄ：
 create
-retrieve
+retrieve  ==select
 update
 delete
 

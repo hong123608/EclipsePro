@@ -54,6 +54,19 @@ delete from student  中的所有数据都会删除
 
 加 where 语句
 
+------------------------------------------安卓api使用--------------- http://blog.csdn.net/jason0539/article/details/10248457
+execSQL()和rawQuery()方法
+ execSQL()方法可以执行insert、delete、update和CREATE TABLE之类有更改行为； rawQuery()方法用于执行select语句。
+
+db.execSQL("insert into person(name, age) values('炸死特', 4)");
+时候用户往往还会输入像“ & ”这些特殊SQL符号，为保证组拼好的SQL语句语法正确，必须对SQL语句中的这些特殊SQL符号都进行转义，显然，对每条SQL语句都做这样的处理工作是比较烦琐的。 SQLiteDatabase类提供了一个重载后的execSQL(String sql, Object[] bindArgs)方法，使用这个方法可以解决前面提到的问题，因为这个方法支持使用占位符参数(?)。
+db.execSQL("insert into person(name, age) values(?,?)", new Object[]{"炸死特", 4});   
+
+////////
+db.rawQuery("select * from person where name like ? and age=?", new String[]{"%炸死特%", "4"});     
+
+
+
 
 
 
